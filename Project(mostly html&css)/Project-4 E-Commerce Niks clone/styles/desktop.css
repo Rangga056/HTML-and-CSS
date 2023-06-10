@@ -1,0 +1,273 @@
+.container{
+  width: 90%;
+  margin-inline: auto;
+}
+
+.top-header{
+  background-color: #F5F5F5;
+}
+
+.top-header .container{
+  margin-inline: auto;
+  padding: .5em;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.top-header .container .logo-img{
+  width: 10%;
+}
+
+.top-header .container a{
+  text-decoration: none;
+  color: #111111;
+}
+
+.top-header .middle-section{
+  width: 60%;
+  text-align: center;
+  font-size: .8rem;
+}
+
+.top-header .menu{
+  width: 30%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  font-size: .7rem;
+  gap: .5em;
+}
+
+.top-header .menu .__link{
+  border-right: solid  1px #111111;
+  padding-inline: 1em;
+}
+
+.top-nav .container{
+  margin: .8em auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.top-nav .container .brand-img{
+  width: 10%;
+}
+
+.top-nav .container a{
+  text-decoration: none;
+  color: #111111;
+  text-transform: capitalize;
+}
+
+.top-nav .container .nav-menu{
+  display: flex;
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+  gap: 1.25em;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-menu .__link.sneaker{
+  text-transform: uppercase;
+}
+
+.top-nav .container .search-section{
+  width: 30%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.top-nav .search-section .search-bar{
+  background-color: #ededed;
+  width:65%;
+  display: flex;
+  align-items: center;
+  border-radius: 1000em;
+  padding: .4em .8em;
+}
+
+.top-nav .search-bar img{
+  width: 20px;
+}
+
+.top-nav .search-bar .search{
+  float: right;
+  background-color: #ededed;
+  border: none;
+  outline-style: none;
+  width: 85%; 
+  height: 85%;
+}
+
+.top-nav .icons{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero .container{
+  width: 100%;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.hero .heading,.hero .product-introduction,.hero .button-link{
+  text-transform: capitalize;
+}
+
+.hero .heading{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero .sub-heading .download-app{
+  color: #111111;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: .2em;
+  border-bottom: 1px solid #111111;
+}
+
+.hero .item-img img{
+  width: 1200px;
+  height: 710px;
+  object-fit: cover;
+}
+
+.hero .product-name{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero .description{
+  font-weight: 500;
+  line-height: .8rem;
+}
+
+.hero .button-link{
+  margin-block: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.hero .button-link button{
+  font-size: 1rem;
+  padding: .6em 1.1em;
+  color: white;
+  background-color: #111111;
+  border: none;
+  border-radius: 1000em;
+  transition: all 300ms ease-in-out;
+}
+
+.hero .button-link button:hover{
+  background-color: #e2e2e2;
+  color: black;
+}
+
+.carousel .gallery {
+  margin-top: -6em;
+	padding: 1rem;
+	display: grid;
+  column-gap: 1em;
+  grid-template-columns: repeat(5, 30vw);
+  overflow: hidden;
+	height: 100%;
+	scroll-snap-type:proximity;
+	scroll-padding: 1rem;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+li {
+  list-style: none;
+	scroll-snap-align: center;
+	display: grid;
+  grid-template-rows: .8fr .1fr .1fr;
+	border-radius: 3px;
+	font-size: 1rem;
+  line-height: .5rem;
+}
+
+.gallery img+*{
+  margin-top: -3em;
+  margin-left: 2em;
+}
+
+.gallery img{
+  width: 90%;
+  object-fit: cover;
+}
+
+.gallery .description .top-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height:min-content;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.gallery .description .product-name{
+  margin-block: 0;
+  text-align: left;
+}
+
+
+.gallery .description .price{
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.featured-section .section-name{
+  margin-left: 2.3em;
+  margin-bottom: 0;
+  font-size: 1.45rem;
+}
+
+.featured-section .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+
+}
+
+.featured-section .container .heading{
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.featured-section .container .sub-heading{
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+}
+
+.featured-section .container .link{
+  padding: .6em 1.2em;
+  border-radius: 100em;
+  background-color: #111111;
+  color: white;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.featured-section .container .link:hover{
+  color: #111111;
+  background-color: #d4d4d4;
+}

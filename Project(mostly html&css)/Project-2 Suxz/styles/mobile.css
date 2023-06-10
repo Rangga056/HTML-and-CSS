@@ -1,0 +1,126 @@
+@media only screen and (max-width: 650px) {
+  .top-nav .menu{
+    display: none;
+  }
+
+  .top-nav .ctas{
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0;
+  }
+
+  .hero .container{
+    flex-direction: column-reverse;
+    margin-bottom: 2rem ;
+  }
+
+  .hero .left-section{
+    width: 100%;
+  }
+
+  .hero .right-section{
+    width: 100%;
+    margin-left:-4em;
+    padding: 0;
+  }
+
+  .hero .right-section img{
+    padding: 0;
+  }
+  
+  .learning-section .card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 350px;
+    margin-inline:auto ;
+  }
+
+  .about-us-section .container{
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .about-us-section .container .background{
+    width:300px;
+  }
+
+  .about-us-section .container .left-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company-history{
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  .company-logo{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  .company-logo .top-row{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .company-logo .top-row img{
+    width: 100%;
+  }
+
+  .company-logo .bottom-row{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .company-logo .bottom-row img{
+    width: 100%;
+  }
+
+  .testimonial{
+    margin-top: -10em;
+  }
+
+  .testimonial .card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    max-width: 350px;
+  }
+
+  .banner .link{
+    margin-top: 2em;
+  }
+
+  .footer .container{
+    flex-direction: column;
+  }
+
+  .footer .left-section{
+    width: 100%;
+  }
+
+  .footer .right-section{
+    /* flex-direction: column;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: auto auto ;
+    margin-inline: 3em auto;
+  }
+  
+  .company-nav-link,.company-other-link,.contact{
+    width: 100%;
+  }
+
+}
