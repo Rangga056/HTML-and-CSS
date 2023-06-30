@@ -13,10 +13,10 @@ export const Navbar = () => {
 
   return (
     <div className="Navbar">
-      <Link className="Link" to="/" > Home </Link>
-      <Link className="Link" to="/login" > Login </Link>
+      <Link to="/" > Home </Link>
+      <Link to="/login" > Login </Link>
 
-      <div className="Profile">
+      <div>
         {user && (
           <>
             <p>{user?.displayName} </p>
