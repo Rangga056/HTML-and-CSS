@@ -1,10 +1,10 @@
 
 <?php
 // Koneksi ke database
-$host = 'localhost';
-$db = 'todolistdb';
-$user = 'root';
-$pass = '';
+$host = ''; // enter your host name
+$db = ''; //enter your database name
+$user = ''; //enter the username
+$pass = ''; //enter the password
 $conn = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
 
   $koneksi = new mysqli($host, $user, $pass, $db);
