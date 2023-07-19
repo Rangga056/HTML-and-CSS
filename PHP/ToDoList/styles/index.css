@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+html,body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  height: 100vh;
+  background-color: #f5f5f5;
+  width: min(1000px, 90%);
+  margin-top: 30px;
+  margin-inline: auto;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,button:hover{
+  cursor: pointer;
+}
+
+.connection{
+  font-size: 1.2rem;
+  font-weight: 600;
+  .connection-connected{
+    color: rgb(0, 251, 0);
+  }
+  .connection-disconnected{
+    color: red;
+  }
+}
+
+.head{
+  display: grid;
+  grid-template-columns: 60px repeat(5, 1fr);
+  width: 100%;
+  border: solid 1px gray;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.head .column{
+  padding: 1em;
+  text-align: center;
+
+}
+
+.head .column:not(:last-child){
+  border-right: solid 1px gray;
+}
+
+.task{
+  display: grid;
+  grid-template-columns: 60px repeat(5, 1fr);
+  place-items: center;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+
+.task div>*{
+  margin: 0;
+}
+
+.task div{
+  padding: 1em;
+  text-align: center;
+}
+
+.task-number{
+  font-weight: 600;
+}
+
+.task-priority{
+  color:  rgb(0, 251, 113);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.task-status{
+  color: red;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ctas{
+  margin-right: -10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .ctas-button{
+    padding: .8em 1em;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    transition: all 200ms;
+  }
+  .edit{
+    background-color: rgb(0, 251, 113);
+  }
+  .delete{
+    background-color: red;
+  }
+  .edit:hover, .delete:hover{
+    scale: 1.02;
+    box-shadow: 0px 8px 9px 2px rgba(0, 0, 0, .15);
+  }
+  .edit:active, .delete:active{
+    scale: .9;
+  }
+}
+
+.create-btn{
+  margin-top: 20px;
+  width: max-content;
+  padding: .9em 1.5em;
+  background-color: black;
+  border-radius: 100rem;
+  margin-inline: auto;
+
+  .create-task{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.main-create-task, .main-edit-task{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-20%) translateY(-52%);
+  width: min(700px, 90%);
+}
+
+.create-task-form, .edit-task-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .form-element{
+    display: flex;
+    flex-direction: column;
+    width: min(300px, 90%);
+  }
+}
+
+.form-element label{
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form-element input{
+  padding: 1em 1.2em;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-element input::placeholder{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.create-submit, .edit-submit{
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  padding: 1em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color:  rgb(0, 251, 113);
+  transition: all 100ms ease-in;
+}
+
+.create-submit:hover, .edit-submit:hover{
+  scale: 1.03;
+  box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, .1);
+}
